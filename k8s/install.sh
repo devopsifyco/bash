@@ -16,6 +16,10 @@ _blue() {
     printf '\033[0;31;36m%b\033[0m' "$1"
 }
 
+next() {
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+
 get_opsy() {
     [ -f /etc/redhat-release ] && awk '{print $0}' /etc/redhat-release && return
     [ -f /etc/os-release ] && awk -F'[= "]' '/PRETTY_NAME/{print $3,$4,$5}' /etc/os-release && return
