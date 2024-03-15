@@ -40,7 +40,7 @@ print_system_info() {
 print_intro() {
     echo "-------------------- A K8S Installation Script By DevOpsify -------------------"
     echo " Version            : $(_green v2024-03-08)"
-    echo " Usage              : $(_red "wget -qO- https://go.opsify.dev/setup-k8s | bash")"
+    echo " Usage              : $(_red "wget -qO- https://go.opsify.dev/install-k8s | bash")"
 }
 
 start_time=$(date +%s)
