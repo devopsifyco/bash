@@ -230,7 +230,7 @@ install_speedtest() {
 print_intro() {
     echo "-------------------- A Bench.sh Script By Teddysun -------------------"
     echo " Version            : $(_green v2023-10-15)"
-    echo " Usage              : $(_red "wget -qO- https://go.bibica.net/speedtest | bash")"
+    echo " Usage              : $(_red "wget -qO- https://go.opsify.dev/speedtest | bash")"
 }
 
 # Get System information
